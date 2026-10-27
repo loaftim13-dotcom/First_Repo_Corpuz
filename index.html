@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lee Yuri T. Corpuz - IT Student Portfolio">
+  <title>Lee Yuri T. Corpuz | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">&lt;/&gt; Lee Yuri</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1>Lee Yuri T. Corpuz</h1>
+        <h2>IT Student | Aspiring Developer</h2>
+        <p class="hero-description">I am an Information Technology student who is learning programming and exploring how to create useful websites, applications, and games.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Project</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-wrap">
+        <img src="profile.jpg" alt="Profile picture of Lee Yuri T. Corpuz" class="profile-photo">
+        <p class="profile-caption">IT STUDENT</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>I am currently an IT student at Eastwoods Professional College of Science and Technology. I am learning about information technology, programming, and software development. I want to improve my skills and gain experience by building projects, including a game.</p>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Java</span><span>PHP</span><span>MySQL</span>
+        <span>Problem Solving</span><span>Learning New Technologies</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">My Project</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">🎮</div>
+          <h3>Game Development</h3>
+          <p>I am currently working on a game as a learning project. I am exploring game ideas and developing my programming skills as I work on it.</p>
+          <p class="tech">In Progress · Programming</p>
+          <span class="status">Currently Working</span>
+        </article>
+        <article class="project-card">
+          <div class="project-icon">💻</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>A personal website to introduce myself and showcase my skills, education, and projects.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <span class="status">Portfolio Project</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline-card">
+        <span class="date">Currently Studying</span>
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Eastwoods Professional College of Science and Technology</p>
+        <p>Philippines</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>You can contact me about projects, collaboration, or learning opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:corpuz.leeyuri@epcst.edu.ph">✉ corpuz.leeyuri@epcst.edu.ph</a>
+        <a href="https://github.com/loaftim13-dotcom" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        <a href="https://www.linkedin.com/in/your-username/" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a>
+      </div>
+      <p class="phone-note">Phone: +63 917 555 0138 <small>(sample placeholder number — replace with your real number)</small></p>
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message" rows="5" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><p>© <span id="year"></span> Lee Yuri T. Corpuz. All rights reserved.</p><a href="#home">Back to Top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
